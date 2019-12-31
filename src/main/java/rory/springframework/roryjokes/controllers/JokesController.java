@@ -15,7 +15,7 @@ public class JokesController {
     @RequestMapping("/")
     public String getJokes(Model model){
         model.addAttribute("joke", jokeGenerator.getJoke());
-        return "joke";
+        return "joke";  /* refers to the view template, joke.html  */
     }
 
 
